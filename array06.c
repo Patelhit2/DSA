@@ -1,13 +1,17 @@
+
 /* Two Dimensional Arrays */
 #include <stdio.h>
-#define row 4
-#define col 3
 void main()
 {
-	int marks [row][col] = {{45,38,64}, {78,89,92}, {65,58,71}, {79,88,95}};
-	/*int marks [row][col] = {45,38,65,78,89,92,65,58,71,79,88,95};*/
-	
-	printf("%d\n",marks[0][2]); /* 64 */
-	printf("%d\n",marks[2][0]); /* 65 */
-	printf("%d\n",marks[1][0]); /* 78 */
+	int marks [4][3];
+	for(int i=0;i<4;i++)
+    {
+        printf("enter 3 elements of row %d :",i+1);
+        for(int j=0;j<3;j++){
+            scanf("%d",&marks[i][j]);
+        }
+    }
+	printf("%d\n",marks[0][2]); 
+	printf("%d\n",marks[2][0]); 
+	printf("%d\n",marks[1][0]); 
 }
