@@ -1,19 +1,29 @@
-#include<stdio.h>
-int main(){
-int a[10];
-printf("enter the elements of array :");
- for(int i=0;i<=9;i++){
-     scanf("%d", &a[i]);
- }
-for(int i=0;i<=9;i++){
-    printf("%d\n",a[i]);
-}
-int sum=0;
-for(int i=0;i<=9;i++){
-    sum+=a[i];
-}
-float avg=sum/10;
-printf("The average of the array element is %f.",avg);
+#include <stdio.h>
+int main()
+{
+  int marks[10];
+  printf("Enter up to 10 student's marks");
+  
+  for(int i=0;i<=9;i++)
+    {
+     scanf("%d",&marks[i]);
+    }
+   int countPass=0;
+   int countFail=0; 
+   
+   for(int i=0; i<10; i++)
+   {
+       if(marks[i]>=35)
+       {
+           countPass++;
+       }
+       else{
+             countFail++;
+           }
+       
+   }
+ printf("Total pass %d\n",countPass);
+ printf("Total fail %d\n",countFail);
 
- return 0;
+return 0;
 }
